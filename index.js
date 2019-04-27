@@ -32,7 +32,8 @@ function exactMatchToList(drivers, key){
   const match = drivers.filter(function(matches){
     return matches[newKey] === key[newKey];
   });
-  const name = nameDriver.map(function(drive){
+  
+  const name = match.map(function(drive){
     named = drive.name;
     return named;
   });

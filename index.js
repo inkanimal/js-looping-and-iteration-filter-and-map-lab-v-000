@@ -26,4 +26,18 @@ function exactMatch(drivers, key){
   return match;
 }
 
+function exactMatchToList(drivers, key){
+  const newKey = Object.keys(key);
+  
+  const match = drivers.filter(function(matches){
+    return matches[newKey] === key[newKey];
+  });
+  const name = nameDriver.map(function(drive){
+    named = drive.name;
+    return named;
+  });
+  return name;
+  
+}
+
 
